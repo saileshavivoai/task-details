@@ -100,3 +100,51 @@ for(var i=0;i<nums.length;i++){
     nums[i]=nums[i]*2;
 }
 console.log(nums);
+
+
+// Strings
+// Count Characters in a String
+
+let str="abirami";
+console.log(str.length);
+
+// Check if Palindrome
+
+function isPalindrome(str){
+     var rev_Str="";
+    for(var i=str.length -1;i>=0;i--){
+        rev_Str=rev_Str+str[i];
+    }
+    if(str==rev_Str){
+        console.log("String is palindrome");
+    }
+    else{
+        console.log(" String is not palindrome");   
+    }
+}
+let String="noon";
+isPalindrome(String);
+
+// Get Current Date
+
+const getCurrentDate=new Date();
+const formattedDate = getCurrentDate.toDateString();
+console.log(formattedDate);
+
+// Repeat a String
+
+let text = "hello";
+let repeatedText = text.repeat(3);
+console.log(repeatedText); 
+
+// Truncate a String
+
+function truncateString(str, num) {
+  if (str.length > num) {
+    return str.slice(0, num);
+  } else {
+    return str;
+  }
+}
+let word="The quick brown fox jumps over the lazy dog"
+console.log(truncateString(word, 7));
