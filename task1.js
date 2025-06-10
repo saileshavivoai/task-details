@@ -59,3 +59,44 @@ function reverseString(str){
 }
 
 console.log(reverseString("hello"));
+
+// Array Functions
+// Get the first element
+
+let arr=[7,2,3,1,8,5];
+console.log(arr[0]);
+
+// Sum of Array Elements
+
+let array=[1,3,5,7,9];
+let sum=0;
+for(var i=0;i<array.length;i++){
+    sum=sum+array[i];
+}
+console.log(sum);
+
+// Check if Array Includes a Value
+
+const values=[8,5,3,2,0,7];
+let check=10;
+console.log(values.includes(check));
+
+// Filter Even Numbers
+
+let value=[1,2,6,5,8,4,3];
+let even=[];
+for(var i=0;i<value.length;i++){
+    if(value[i]%2==0){
+        even.push(value[i]);
+    }
+}
+console.log(even);
+
+
+// Double Each Element
+
+let nums=[2,4,6,8,3];
+for(var i=0;i<nums.length;i++){
+    nums[i]=nums[i]*2;
+}
+console.log(nums);
