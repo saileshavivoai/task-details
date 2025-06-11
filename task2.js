@@ -65,3 +65,72 @@ setTimeout(function() {
   console.log(message); 
 })();
 
+// Loop Types 
+// For Loop
+
+for(let i=1;i<5;i++){
+  console.log(i);  
+}
+
+// While Loop
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+// Do...While Loop
+let num = 0;
+do {
+  console.log("Count: " + num);
+  num++;
+} while (num < 0);
+
+// For...of Loop
+let fruits = ["apple", "banana", "cherry"];
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+
+let text = "hello";
+for (let char of text) {
+  console.log(char);
+}
+
+// For...in Loop
+
+let person = { name: "Abirami", age: 20, city: "Chennai" };
+for (let key in person) {
+  console.log(key + ": " + person[key]);
+}
+
+// Array Methods
+// .map() – Transform Elements
+
+let nums = [1, 2, 3];
+let square = nums.map(num => num * num);
+console.log(square); 
+
+// .filter() – Select Elements
+
+let numbers = [1, 2, 3, 4];
+let evens = numbers.filter(num => num % 2 === 0);
+console.log(evens); 
+
+// .reduce() – Collapse into One
+
+const number = [1, 2, 3, 4];
+const total = number.reduce((sum, curr) => sum + curr, 0);
+console.log(total); // 10
+
+// .forEach() – Iterate Without Return
+const fruit = ["apple", "banana", "cherry"];
+fruit.forEach(fruits => {
+  console.log(fruits);
+});
+
+// .find() – Locate the First Match
+
+let marks=[45,98,99,65];
+let search = marks.find(num => num % 2 === 0);
+console.log(search);
