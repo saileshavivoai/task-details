@@ -61,3 +61,96 @@ double(d);                // call the function
 console.log(newArr);      // printing the Output
 
 
+//Add two numbers
+const num1 = 5;
+const num2 = 3;
+const num3 = num1 + num2;  // add two numbers
+console.log(num3);         // display the num3
+
+//Check if number is even
+
+const number = 5;
+
+if(number % 2 == 0) {
+    console.log("The number is even.");  //check if the number is even
+}
+else {
+    console.log("The number is odd.");   // if the number is odd
+}
+
+
+// maximum of two numbers 
+
+let number1 = 50;
+let number2 = 49;
+
+if(number1 > number2){
+    console.log("number1 is greater");
+}
+else{
+    console.log("number2 is greater");
+}
+
+//Reverse a string 
+
+let str = "Sabari gv";                         //String input
+let ans = str.split('').reverse().join('');
+console.log(ans);                              //String reversed output       
+
+
+//Capitalize the first letter
+
+let word ="sabari";
+function Capital(s){
+    if(!s){
+        return "";
+    }
+    else{
+        return s.charAt(0).toUpperCase()+s.slice(1);
+    }
+}
+console.log(Capital(word));
+
+
+//Count Characters in a String
+
+let s="sabarigirivasan";
+let count = s.length;
+console.log(count);
+
+//Repeat a string
+
+let text = "Sabari";
+let repeated = text.repeat(7);
+console.log(repeated);
+
+
+//Check if Palindrome
+let w="madam";
+
+function isPalindrome(str) {
+    let j = str.length - 1;
+for (let i = 0; i < str.length / 2; i++) {
+    if (str[i] !== str[j]) {
+        return false;
+    }
+    j--;
+}
+return true;
+}
+console.log(isPalindrome(w));
+
+//Truncate a String
+function truncateString(str, num) {
+    if (str.length > num) {
+        return str.slice(0, num) + "";
+    } else {
+        return str;
+    }
+}
+console.log(truncateString("Sabarigiri",6));
+
+//get current date
+
+
+
