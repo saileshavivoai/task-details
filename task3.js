@@ -6,7 +6,7 @@ let user = { name: "Abirami", age: 20, city:"Chennai" };
 //  Using in operator
 console.log("age" in user); 
 
-//  Using hasOwnProperty()
+//  Using hasOwnProperty() 
 console.log(user.hasOwnProperty("address")); 
 
 // Using Object.hasOwn()
@@ -40,3 +40,37 @@ let car = { brand: "Tesla", model: "X", year: 2020 };
 let value = Object.values(car);
 console.log(value); 
 
+// Object & JSON Functions
+// Create User Object
+
+let data = {
+  name: "Abirami",
+  age: 18,
+  email: "abi@gmail.com"
+};
+
+console.log(data);
+
+// Update Object Property
+
+data.age=20;
+data.city="Chennai";
+
+console.log(data);
+
+// Convert Object to JSON
+
+let jsonString = JSON.stringify(data);
+console.log(jsonString);
+
+// Parse JSON String
+
+let jsonText = '{"name":"Abirami","age":19}';
+let userObject = JSON.parse(jsonText);
+
+console.log(userObject.name); 
+
+// List Object Keys
+
+let keys = Object.keys(data);
+console.log(keys); 
